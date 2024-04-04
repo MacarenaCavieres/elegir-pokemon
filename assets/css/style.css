@@ -3,3 +3,7 @@ body {
     background-size: repeat;
     font-family: "Roboto Condensed", sans-serif;
 }
+
+#container {
+    text-transform: uppercase;
+}

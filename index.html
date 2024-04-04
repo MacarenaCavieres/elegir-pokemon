@@ -19,12 +19,12 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body class="container text-center mt-3">
-        <h1 class="text-white">Escribe el número de tu pokémon favorito</h1>
+        <h1 class="text-white">Escribe el ID de tu pokémon favorito</h1>
 
         <section class="container">
             <form class="row g-3 justify-content-center">
                 <div class="col-auto">
-                    <input type="number" class="form-control" id="number" placeholder="Número" />
+                    <input type="number" class="form-control" id="number" placeholder="Número" min="1" />
                 </div>
                 <div class="col-auto">
                     <button type="submit" class="btn btn-info text-white mb-3">Dámelo!</button>
@@ -32,36 +32,30 @@
             </form>
         </section>
 
+        <main id="container"></main>
+
         <template id="template">
-            <section class="container mt-5">
+            <section class="container mt-3">
                 <div class="row justify-content-center">
-                    <article class="col-10 col-md-4 col-lg-3 mb-4">
+                    <article class="col-10 col-md-5 col-lg-5 mb-4">
                         <div class="card">
-                            <img
-                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                                class="card-img-top"
-                                alt="bulbasaur"
-                            />
+                            <img src="" class="card-img-top img-fluid" id="imgPoke" alt="" />
                             <div class="card-body">
-                                <h5 class="card-title">Bulbasaur</h5>
-                                <p>Número ID:1</p>
-                                <p>Height 7</p>
-                                <p>Weight 69</p>
+                                <h2 class="card-title normal"></h2>
+                                <p class="idN m-0"></p>
+                                <p class="heightN m-0"></p>
+                                <p class="weightN"></p>
                             </div>
                         </div>
                     </article>
-                    <article class="col-10 col-md-4 col-lg-3">
+                    <article class="col-10 col-md-5 col-lg-5 mb-4">
                         <div class="card">
-                            <img
-                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/1.png"
-                                class="card-img-top"
-                                alt="bulbasaur"
-                            />
+                            <img src="" class="card-img-top img-fluid" id="imgPokeShiny" alt="" />
                             <div class="card-body">
-                                <h5 class="card-title">Bulbasaur Shiny</h5>
-                                <p>Número ID:1</p>
-                                <p>Height 7</p>
-                                <p>Weight 69</p>
+                                <h2 class="card-title shiny"></h2>
+                                <p class="idS m-0"></p>
+                                <p class="heightS m-0"></p>
+                                <p class="weightS"></p>
                             </div>
                         </div>
                     </article>
