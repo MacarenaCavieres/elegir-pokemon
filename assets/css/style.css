@@ -1,7 +1,5 @@
 body {
-    margin: 0;
-    background-image: url("../img/wallpaper.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    background-size: contain;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../img/wallpaper.jpg");
+    background-size: repeat;
+    font-family: "Roboto Condensed", sans-serif;
 }
